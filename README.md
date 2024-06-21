@@ -1,8 +1,21 @@
 # 📮 PostMark
 
+[![arxiv](https://img.shields.io/badge/arXiv-2305.14251-b31b1b.svg)](https://arxiv.org/abs/2406.14517)
+
 Official repository for **"PostMark: A Robust Blackbox Watermark for Large Language Models"** 🌊
 
 PostMark is a post-hoc watermarking method that operates without access to model logits, enabling it to watermark outputs from blackbox LLMs such as GPT-4. This repository provides the necessary annotations, outputs, and scripts to replicate the results reported in the accompanying paper. The code for running PostMark is currently being cleaned up and will be uploaded by mid-July 2024 at the latest.
+
+If you find PostMark useful, please cite:
+```
+@misc{chang2024postmark,
+      title={PostMark: A Robust Blackbox Watermark for Large Language Models}, 
+      author={Yapei Chang and Kalpesh Krishna and Amir Houmansadr and John Wieting and Mohit Iyyer},
+      year={2024},
+      eprint={2406.14517},
+      archivePrefix={arXiv},
+}
+```
 
 ## 🧭 Navigating the repo
 
