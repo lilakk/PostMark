@@ -1,0 +1,4 @@
+Paraphrase the given sentence. Only return the paraphrased sentence in your response.
+
+Sentence to paraphrase: {}
+Your paraphrase of the sentence: 

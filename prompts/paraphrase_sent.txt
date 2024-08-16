@@ -1,0 +1,5 @@
+Given some previous context and a sentence following that context, paraphrase the current sentence. Only return the paraphrased sentence in your response.
+
+Previous context: {}
+Current sentence to paraphrase: {}
+Your paraphrase of the current sentence: 

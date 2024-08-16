@@ -1,0 +1,7 @@
+Given below are a piece of text and a word list. Rewrite the text to incorporate all words from the provided word list. The rewritten text must be coherent and factual. Distribute the words from the list evenly throughout the text, rather than clustering them in a single section. When rewriting the text, try your best to minimize text length increase. Only return the rewritten text in your response, do not say anything else.
+
+Text: {}
+
+Word list: {}
+
+Rewritten text:
