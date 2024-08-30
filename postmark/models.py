@@ -331,11 +331,11 @@ class Llama3_8B():
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         if half:
             print("Loading half precision model...")
-            self.tokenizer = AutoTokenizer.from_pretrained(f"/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B", device_map="auto")
-            self.model = AutoModelForCausalLM.from_pretrained(f"/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B", device_map="auto", torch_dtype=torch.float16)
+            self.tokenizer = AutoTokenizer.from_pretrained(f"meta-llama/Meta-Llama-3-8B", device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained(f"meta-llama/Meta-Llama-3-8B", device_map="auto", torch_dtype=torch.float16)
         else:
-            self.tokenizer = AutoTokenizer.from_pretrained(f"/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B", device_map="auto")
-            self.model = AutoModelForCausalLM.from_pretrained(f"/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B", device_map="auto")
+            self.tokenizer = AutoTokenizer.from_pretrained(f"meta-llama/Meta-Llama-3-8B", device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained(f"meta-llama/Meta-Llama-3-8B", device_map="auto")
         self.model.eval()
     
     def generate(self,
@@ -377,11 +377,11 @@ class Llama3_8B_Chat():
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         if half:
             print("Loading half precision model...")
-            self.tokenizer = AutoTokenizer.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B-Instruct", device_map="auto")
-            self.model = AutoModelForCausalLM.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B-Instruct", device_map="auto", torch_dtype=torch.float16)
+            self.tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", device_map="auto", torch_dtype=torch.float16)
         else:
-            self.tokenizer = AutoTokenizer.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B-Instruct", device_map="auto")
-            self.model = AutoModelForCausalLM.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Meta-Llama-3-8B-Instruct", device_map="auto")
+            self.tokenizer = AutoTokenizer.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained("meta-llama/Meta-Llama-3-8B-Instruct", device_map="auto")
         self.model.eval()
     
     def generate(self,
@@ -427,11 +427,11 @@ class Mistral_7B_Inst():
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         if half:
             print("Loading half precision model...")
-            self.tokenizer = AutoTokenizer.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Mistral-7B-Instruct-v0.2", device_map="auto")
-            self.model = AutoModelForCausalLM.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Mistral-7B-Instruct-v0.2", device_map="auto", torch_dtype=torch.float16)
+            self.tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", device_map="auto", torch_dtype=torch.float16)
         else:
-            self.tokenizer = AutoTokenizer.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Mistral-7B-Instruct-v0.2", device_map="auto")
-            self.model = AutoModelForCausalLM.from_pretrained("/work/pi_miyyer_umass_edu/LLMs/Mistral-7B-Instruct-v0.2", device_map="auto")
+            self.tokenizer = AutoTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", device_map="auto")
+            self.model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-Instruct-v0.2", device_map="auto")
         self.model.eval()
     
     def generate(self,
