@@ -38,7 +38,12 @@ PostMark is a post-hoc watermarking method that operates without access to model
 
 1. Install requirements.
 2. `python3 -m spacy download en_core_web_sm`.
-3. Download all files in [this link](https://drive.google.com/drive/folders/1Rdpqbtvy2s91ZrcgqDy6CrTCb9dZBQBf?usp=sharing), place them in the directory.
+3. Download the data files from [Hugging Face](https://huggingface.co/datasets/yapeichang/PostMark) into the repo root (`paragram_xxl.pkl`, `filtered_data_100k_unique_250w_sentbound_openai_embs.pkl`, `filtered_data_100k_unique_250w_sentbound_nomic_embs.pkl`):
+    ```
+    pip install -U huggingface_hub
+    hf download yapeichang/PostMark --repo-type dataset --local-dir . --include "*.pkl" "SHA256SUMS"
+    sha256sum -c SHA256SUMS  # optional: verify the downloads
+    ```
 4. Put your openai key in `openai_key.txt`.
 5. If you want to use `llama-3-70b-chat`, put your together.ai key in `together_key.txt`, because currently PostMark uses the together API for accessing this model.
 
